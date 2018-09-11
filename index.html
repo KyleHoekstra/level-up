@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8"> <!-- (Attribute charset)utf 8 encoding of text - doesn't need to be closed -->
+        <link rel="stylesheet" href="normalize.css"><!-- put before style.css -->
+        <link rel="stylesheet" href="style.css"> <!-- (Attribute rel)(rel = relationship)(href = hypertext refence) link to css file -->
+                                    <!-- href path current directory--><!-- ../ 1 folder back - /root (view page source in chrome) -->
+        <script src="script.js" charset="utf-8"></script><!-- source in javaScript file -->
+        <script src="more-scripts.js"></script>
+        <title>Our First Site</title> <!-- name for the tab -->
+   <!-- <style>
+           h1 {
+              color:red;
+           }
+         </style> add css to html with style tags -->
+    </head>
+    <body>                  <!-- multiple classes inside an element -->
+        <header class="site-header group"><!-- display information for website  <h1></h1>-->
+          <h1>Our First Website</h1>
+     <!-- <a href="about.html">About</a> link to another page -->
+     <!-- <a href="http://google.com"target="-blank">Google</a> link to new webpage in new tab -->
+          <nav class="main-nav"><!-- navigation section of website -->
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+                <li><a href="http://google.com"target="-blank">Google</a></li>
+            </ul>
+          </nav>
+          <!--target _blank - new tab, _parent - parent frame, _self - same tab, -->
+        </header>
+        <main><!-- majority of content -->
+            <section class="billboard">
+                <!--   content that is grouped together -->
+                <h2>Learning with levelUp Tutorials</h2>
+                <p id="main-text" class="into-text">
+                  <!-- <ID>< identify a particular element on page. only suppose to be assigend to one element -->
+                  <!--ex. <p id="main-text> NO SPACES style off of ids with # ex #main-text-->
+                  <!-- browser performance worse on ids better to use .class -->
+                  <!-- can also link to ids -->
+                  <!-- <class>add descriptor to an element to use css on - no spaces use -_ -->
+                  <!-- in css .class name classes meant to be reused use on multiple elements to get same styles-->
+                  I'm learning to <span>build</span> websites.
+                </p>
+                <p class="into-text">
+                  I'm learning to make websites.
+                </p>
+                <p class="into-text part-two">
+                  <!-- use multiple classes -->
+                  testing out some stuff.
+                </p>
+            </section>
+            <div class="column-wrapper group">
+                <section class="main-col">
+                    <h3>Learn About Level Up</h3>
+                    <p>
+                      Some text about level up.
+                    </p>
+                </section>
+                <aside class="sidebar-col"> <!-- secondary content -->
+                    <h4>Sign Up</h4>
+                    <p>
+                      Sign up to learn more about websites.
+                    </p>
+                </aside>
+            </div>
+        </main>
+        <footer id="footer" class="main-footer group"><!-- bottom of website -->
+          <p class="copywrite">
+          Level Up Tutorials.  &copy; 2018 <!-- html entitys -->
+          </p>
+          <ul class="footer-nav group">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </footer>
+    </body>
+</html>
+
+<!-- display block element need to take up whole space and have margins
+etc <header, main, footer, h1, p> take up full width set margin padding all around -->
+<!-- display inline element going to be styled inline with your content <span> don't take up width, can't give width, height, margins -->
